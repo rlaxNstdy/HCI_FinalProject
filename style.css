@@ -94,8 +94,8 @@ color: var(--main-color);
 /* Slideshow container */
 /* Slideshow container */
 .slideshow-container {
-  max-width: 2000px;
-  max-height: 500px;
+  max-width: 800px;
+  max-height: 400px;
   position: relative;
   margin: auto;
   overflow: hidden;
