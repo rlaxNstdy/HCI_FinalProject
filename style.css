@@ -21,6 +21,10 @@
 --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img{
   width: 100%;
   max-width: 100%;
