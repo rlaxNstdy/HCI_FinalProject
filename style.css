@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  list-style: none;
+  text-decoration:  none ;
+}
+/*    variables          */
+:root {
+  --main-color: #46a2db;
+  --second-color: #053f5f;
+  --text-color: #2d6d9b;
+  --bg-color:#fff0f0 ;
+
+
+/*    box shadow       */
+--box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+
+img{
+  width: 100%;
+}
+body{
+  color: var(--text-color);
+}
 .container{
   max-width: 1068px;
   margin-left: auto;
   margin-right: auto;
 }
 header{
-  display: block; width: 100%;
-  background: var (--bg-color);
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
   position: fixed;
   top: 0; 
   left:0;
@@ -21,17 +51,16 @@ header{
 
 .navbar{
   display: flex;
-  color: aqua;
 }
 
 .navbar a{
   padding: 8px 17px;
-  color: brown;
+  color: var(--text-color) ;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 
 .navbar a:hover{
-color: blue;
+color: var(--main-color);
 }
