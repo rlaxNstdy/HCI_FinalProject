@@ -81,7 +81,14 @@ color: var(--main-color);
 }
 
 /*        home images and also home text  */
-
+.home{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
