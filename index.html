@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Real Homie </title>
-</head>
-<body>
-   <header>
+  </head>
+  <body>
+    <header>
       <div class="nav container">
         <a href="index.html" class="logo"><i class='bx bx-home'></i> Need a Home?</a> 
         <ul class="navbar">
@@ -20,38 +21,42 @@
       </div>
     </header>
 
-  <section class="home">
-  <!--        home              -->
-  <!-- Slideshow container -->
-    <div class="slideshow-container">
-      <!-- Full-width images with number and caption text -->
-      <div class="image_slide">
-        <img src="Images/House2.jpg" style="width:100%">
-        <div class="text-left">
-          <h2>Your Left-aligned Text</h2>
-          <p>Additional description or content here...</p>
+    <section class="home container" id="home">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="images-slide">
+          <img src="Images/thishouse3.jpg" style="width:100%">
+          <div class="text">
+            <h1>Find Your Next <br> Perfect Place to <br> Live</h1>
+            <br><a href="#" class="btn">Sign Up</a>
+          </div>
         </div>
+
+        <div class="images-slide">
+          <img src="Images/thishouse2.jpg" style="width:100%">
+          <div class="text">
+            <h1>Find Your Next <br> Perfect Place to <br> Live</h1>
+            <br><a href="#" class="btn">Sign Up</a>
+          </div>
         </div>
+        <script src="main.js"></script>  
       </div>
-
-      <div class="image_slide">
-        <img src="Images/House3.jpg" style="width:100%">
-        <div class="text-left">
-          <h2>Your Left-aligned Text</h2>
-          <p>Additional description or content here...</p>
-        </div>
+      
+    <section class="about-container" id="about">
+      <div class="about"> <!-- Corrected class name here -->
+        <img src="Images/House1.jpg" alt="">
       </div>
-    </div>
-
-    <!-- Next and previous buttons -->
-
-    <!-- The dots/circles -->
-      <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-
+      <div class="about-text">
+        <span>About Us</span>
+        <h2>We Provide The Best <br> Property For You</h2>
+        <p>ajwbfhjabwfabw fuabjwfauwhbfaw</p>
+        <p>ajwbfhjabwfabw fuabjwfauwhbfaw</p>
+        <br><a href="#" class="btn">Learn More</a>
       </div>
-  </section>    
-  <script src="main.js"></script>    
-</body>
+    </section>
+      
+   
+  </body>
 </html>

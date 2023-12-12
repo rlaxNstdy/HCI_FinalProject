@@ -3,13 +3,12 @@ showSlides();
 
 function showSlides() {
   let i;
-  let slides = document.getElementsByClassName("image_slide");
+  let slides = document.getElementsByClassName("images-slide");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex % slides.length].style.display = "block";
-  setTimeout(showSlides, 5000); // Change image every 5 seconds
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides,  6000); // Change image every 6 seconds
 }
-  

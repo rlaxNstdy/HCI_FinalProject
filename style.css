@@ -23,6 +23,9 @@
 
 img{
   width: 100%;
+  max-width: 100%;
+  height: auto;
+  
 }
 body{
   color: var(--text-color);
@@ -31,7 +34,7 @@ section{
   padding: 4.5rem 0 3rem;
 }
 .container{
-  max-width: 1068px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -81,76 +84,34 @@ color: var(--main-color);
 }
 
 /*        home images and also home text  */
-.home{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
-/* Slideshow container */
 .slideshow-container {
-  max-width: 800px;
-  max-height: 400px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
-  overflow: hidden;
-  margin-top: 20px; /* Add a top margin */
 }
-
-/* Full-width images with number and caption text */
-.image_slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* ... (rest of the CSS remains unchanged) */
-
 
 /* Hide the images by default */
-.mySlides {
+.images-slide{
   display: none;
 }
 
-
-
-/* Left-aligned text styles */
-.text-left {
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
   position: absolute;
-  top: 50%;
-  left: 10px; /* Adjust the left spacing as needed */
+  top: 50%; /* Center the text vertically */
   transform: translateY(-50%);
-  color: white; /* Adjust the text color as needed */
-  z-index: 2; /* Ensure the text appears above the image */
-  width: 200px; /* Adjust the width of the text container */
+  width: 100%;
+  text-align: left; /* Change text-align to left */
+  left: 20px; /* Adjust left spacing as needed */
 }
 
-.text-left h2, .text-left p {
-  margin: 0;
-}
-
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -162,3 +123,46 @@ color: var(--main-color);
   from {opacity: .4}
   to {opacity: 1}
 }
+@media only screen and (max-width: 600px) {
+  /* Styles for screens up to 600px wide */
+  /* Adjust as needed */
+}
+
+
+/*       about us      */
+
+/* ... Your existing styles ... */
+
+/* about us */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, auto));
+  gap: 2rem;
+}
+
+.about-container .about {
+  max-width: 100%;
+  overflow: hidden; /* Hide overflowing content */
+  border-radius: 3rem; /* Adjust the border radius */
+  box-shadow: var(--box-shadow); /* Add box shadow */
+}
+
+.about-container .about img {
+  width: 100%;
+  border-radius: 3rem 0 3rem 3rem;
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+.about-container .about-text {
+  text-align: left;
+  padding: 2rem; /* Add padding for better spacing */
+}
+
+.about-container .about-text span {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+/* ... Your existing styles ... */
