@@ -112,6 +112,13 @@ header {
   display: none;
 }
 
+/* Images inside the slideshow */
+.images-slide img {
+  width: 150%;
+  height: 100%;
+  object-fit: cover; /* Make the image cover the container while maintaining aspect ratio */
+}
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -119,13 +126,10 @@ header {
   padding: 8px 12px;
   position: absolute;
   top: 50%;
-  /* Center the text vertically */
   transform: translateY(-50%);
   width: 100%;
   text-align: left;
-  /* Change text-align to left */
   left: 20px;
-  /* Adjust left spacing as needed */
 }
 
 /* Fading animation */
@@ -146,10 +150,8 @@ header {
 
 @media only screen and (max-width: 600px) {
   /* Styles for screens up to 600px wide */
-  /* Adjust as needed */
+
 }
-
-
 
 
 
