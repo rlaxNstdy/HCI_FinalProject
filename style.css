@@ -15,7 +15,7 @@
   --main-color: #46a2db;
   --second-color: #053f5f;
   --text-color: #2d6d9b;
-  --bg-color: #ffffff;
+  --bg-color: #c8e9ec;
   --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
 }
 
@@ -89,8 +89,6 @@ header {
 .btn:hover {
   background: #00a6ff;
 }
-
-
 
 
 
@@ -209,7 +207,10 @@ header {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 3rem;
+  background-color: var(--bg-color); /* Setbackground color */
+  padding: 3rem 0; /* Adjust padding */
 }
+
 
 .buyandsell .buysell-container {
   width: 450px; /* Set a fixed width for better control */
