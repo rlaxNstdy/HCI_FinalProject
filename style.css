@@ -169,56 +169,85 @@ color: var(--main-color);
 
 
 
+
 /* for the buy and sell */
-
-
-.buyandsell {
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
-}
-
-.buysell {
+body {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.buyandsell {
+  display: flex;
+  gap: 2px; /* Adjust the gap between the cards */
+  justify-content: center;
   align-items: center;
 }
 
-.buysell-container {
-  display: flex;
+.buyandsell .buysell-container,
+.buyandsell .container {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.card {
-  position: relative; /* Added position relative */
-  height: 500px;
-  margin: 50px;
-  box-shadow: 5px 5px 20px;
+.buyandsell .buysell-container img,
+.buyandsell .container img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buyandsell .buysell-container:hover,
+.buyandsell .container:hover {
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.buyandsell .buysell-container:hover img,
+.buyandsell .container:hover img {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.buyandsell .buysell-intro,
+.buyandsell .container .buysell-intro {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  height: 0;
   overflow: hidden;
 }
 
-.buysell-container .card img {
-  height: 500px;
-  width: 100%; /* Changed width to 100% */
-  border-radius: 3px;
-  object-fit: cover; /* Maintain image aspect ratio */
+.buyandsell .buysell-container:hover .buysell-intro,
+.buyandsell .container:hover .buysell-intro {
+  height: 120px;
+  opacity: 1;
 }
 
-.card-intro {
-  position: absolute; /* Added position absolute */
-  top: 50%; /* Center vertically */
-  left: 50%; /* Center horizontally */
-  transform: translate(-50%, -50%); /* Center content */
-  width: 80%; /* Adjust width as needed */
-  padding: 6px;
-  box-sizing: border-box;
-  background: var(--bg-color);
-  color: var(--text-color);
-  transition: .5s;
-  opacity: 0; /* Set initial opacity to 0 */
+.buyandsell .buysell-container h1,
+.buyandsell .container h1 {
+  margin-bottom: 10px;
 }
 
-.card:hover .card-intro {
-  opacity: 1; /* Change opacity to 1 on hover */
+.buyandsell .buysell-container p,
+.buyandsell .container p {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
 }
 
+.buyandsell .buysell-container:hover p,
+.buyandsell .container:hover p {
+  opacity: 1;
+  visibility: visible;
+}
