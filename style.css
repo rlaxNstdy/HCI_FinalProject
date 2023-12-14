@@ -104,6 +104,10 @@ header {
   position: relative;
   margin: auto;
 }
+.slideshow-container img{
+  max-width: 1300px;
+  max-height: 700px;
+}
 
 /* Hide the images by default */
 .images-slide {
