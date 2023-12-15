@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="findagentpage.css">
+    <title>Find agent</title>
+</head>
+
+<body>
+    <!-- Top nav -->
+    <header>
+        <div class="nav container">
+            <a href="index.html" class="logo"><i class='bx bx-home'></i> Need a Home?</a>
+            <ul class="navbar">
+                <li><a href="index.html #homes">Home</a></li>
+                <li><a href="index.html #about">About</a></li>
+                <li><a href=" index.html #buyandsell">Buy & Sell</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="agentform">
+        <div class="agent-container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+    </section>
+</body>
+</html>
