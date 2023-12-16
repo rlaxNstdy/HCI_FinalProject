@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="findagentpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Find agent</title>
 </head>
 
@@ -12,29 +13,30 @@
     <!-- Top nav -->
     <header>
         <div class="nav container">
-            <a href="index.html" class="logo"><i class='bx bx-home'></i> Need a Home?</a>
-            <ul class="navbar">
+            <a href="index.html" class="logo"><i class='bx bx-home'></i> Home</a>
+            <!--<ul class="navbar">
                 <li><a href="index.html #homes">Home</a></li>
                 <li><a href="index.html #about">About</a></li>
                 <li><a href=" index.html #buyandsell">Buy & Sell</a></li>
-            </ul>
+            </ul>-->
         </div>
     </header>
     <section class="agentform">
         <div class="agent-container">
             <form action="action_page.php">
           
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Full Name..">
           
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="lname">Property Address That You Wish to Sell</label>
+              <input type="text" id="lname" name="lastname" placeholder="Property Address">
           
               <label for="country">Country</label>
               <select id="country" name="country">
+                <option value="australia">Indonesia</option>
                 <option value="australia">Australia</option>
                 <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+                <option value="usa">United States of America</option>
               </select>
           
               <label for="subject">Subject</label>
