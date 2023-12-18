@@ -103,6 +103,16 @@ header {
     flex-direction: column;
     row-gap: 1rem;
   }
+
+  .login-image img{
+    max-width: 600px;
+    max-height: 600px;
+    
+  }
+
+  .login-image{
+    margin-right: 60px;
+  }
   
   .login-container h2 {
     font-size: 1.4rem;
@@ -210,4 +220,5 @@ header {
   color: var(--bg-color);
   background-color: var(--main-color);
 }
+
 

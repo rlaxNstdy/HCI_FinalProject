@@ -85,7 +85,7 @@ header {
 
 /* The hero image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/House3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Images/sellhousepage2.jpg");
   height: 500px; /* or set a specific value like height: 500px; */
   background-position: center;
   background-repeat: no-repeat;
@@ -123,15 +123,14 @@ text-size-adjust: 100px;
 }
 
 .agency-container .agency {
-  max-width: 100%;
+  max-width: 600px;
+  max-height: 450px;
   overflow: hidden;
   border-radius: 3rem;
   box-shadow: var(--box-shadow);
 }
 
 .agency-container .agency img {
-  width: 100%;
-  height: 100%;
   border-radius: 3rem 0 3rem 3rem;
   object-fit: cover;
 }
@@ -163,4 +162,61 @@ text-size-adjust: 100px;
 
 .btn:hover {
   background: #00a6ff;
+}
+
+/* For Footer section */
+.footer{
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 0 0 0 0;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+  gap: 2rem;
+}
+
+.footer-container h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.footer-box a {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+}
+
+.footer-box a:hover {
+  color: var(--text-color);
+}
+
+.social a {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.social a:hover {
+  color: var(--second-color);
+
+}
+
+.Copyright {
+  padding: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  background-color: var(--main-color);
 }

@@ -1,3 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* variables */
+:root {
+  --main-color: #46a2db;
+  --second-color: #053f5f;
+  --text-color: #2d6d9b;
+  --bg-color: #c8e9ec;
+  --box-shadow: 2px 2px 18px rgb(14 52 54 / 15%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  color: var(--text-color);
+}
+
+section {
+  padding: 4.5rem 0 3rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: block;
+  width: 100%;
+  background: var(--bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  padding: 8px 17px;
+  color: var(--text-color);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+
+
+/* the button for the login */
+.btn {
+  padding: 8px 22px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 5rem;
+}
+
+.btn:hover {
+  background: #00a6ff;
+}
 .section { padding-block-end: 60px; }
 
 .title-wrapper { margin-block-end: 32 px; }
@@ -15,6 +101,7 @@
 }
 
 
+
 .badge {
     height: 32px;
     max-width: max-content;
@@ -26,7 +113,26 @@
     box-shadow: var(--shadow-3);
 }
 
+.section property{
+    margin-bottom: 10px;
+}
 
+.title-wrapper {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.title-wrapper h2,
+.title-wrapper p,
+.title-wrapper .btn {
+    margin-bottom: 20px;
+    margin: flex; /* Adjust the value as needed */
+}
+
+.titleclass{
+    margin: flex;
+    margin-bottom: 20px;
+
+}
 
 .card {
     border-radius: var(--radius-large);
@@ -110,7 +216,8 @@
 
 
 
-.property { padding-block-start: 60px; }
+.property { padding-block-start: 60px;
+    padding-bottom: 60px }
 
 .property .section-text {
     margin-block: 8px 16px;
@@ -121,4 +228,61 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 16px;
+}
+
+/* For Footer section */
+.footer{
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 0 0 0 0;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+  gap: 2rem;
+}
+
+.footer-container h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.footer-box a {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--bg-color);
+  margin-bottom: 1rem;
+}
+
+.footer-box a:hover {
+  color: var(--text-color);
+}
+
+.social a {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+
+.social a:hover {
+  color: var(--second-color);
+
+}
+
+.Copyright {
+  padding: 20px;
+  text-align: center;
+  color: var(--bg-color);
+  background-color: var(--main-color);
 }

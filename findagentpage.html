@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="findagentpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <title>Find agent</title>
 </head>
 
@@ -16,7 +17,7 @@
             <ul class="navbar">
                 <li><a href="index.html #homes">Home</a></li>
                 <li><a href="index.html #about">About</a></li>
-                <li><a href=" index.html #buyandsell">Buy & Sell</a></li>
+                <li><a href="index.html #buyandsell">Buy & Sell</a></li>
             </ul>
         </div>
     </header>
@@ -29,21 +30,69 @@
           
               <label for="lname">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="area">Area (by sqft)</label>
+              <input type="text" id="lname" name="area" placeholder=" The House Area ">
+
+              <label for="bedroom">How many bedroom ? </label>
+              <input type="text" id="bedroom" name="bedroom" placeholder=" Number of Bedroom ">
+
+              <label for="bathroom"> How many bathroom?</label>
+              <input type="text" id="bathroom" name="bathroom" placeholder=" Number of Bathroom ">
+
+              <label for="price"> Price estimate</label>
+              <input type="text" id="price" name="price" placeholder="Your price  ">
+
+
           
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+              <label for="city">City</label>
+              <select id="city" name="city">
+                <option value="jakarta">Jakarta</option>
+                <option value="bintaro">Bintaro</option>
+                <option value="alam sutra">Alamsutra</option>
+                <option value="bogor">Bogor</option>
               </select>
           
               <label for="subject">Subject</label>
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
           
-              <input type="submit" value="Submit">
+              <a href="Thankyoupage.html" class="btn"> Submit</a>
           
             </form>
           </div>
     </section>
+    <!-- Footer -->
+  <section class="footer">
+    <div class="footer-container container">
+      <h2>Real Homie</h2>
+      <!--<div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="#">Agency</a>
+        <a href="#">Building</a>
+        <a href="#">Rates</a>        
+      </div>-->
+      <div class="footer-box">
+        <h3>Location</h3>
+        <a href="#">Jakarta</a>
+        <a href="#">BSD</a>
+        <a href="#">Bintaro</a>
+      </div>
+      <div class="footer-box">
+        <h3>Contacts</h3>
+        <a href="#">(+62)84204206969</a>
+        <a href="#">RealHomie@gmail.com</a>
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook" ></i></a>
+          <a href="#"><i class="bx bxl-twitter" ></i></a>
+          <a href="#"><i class="bx bxl-instagram" ></i></a>
+        </div>
+      </div> 
+    </div>
+  </section>
+  <!-- Copyright -->
+  <div class="Copyright">
+    <p>&#169; WhyError All Rights Reserved</p>
+  </div>
+
 </body>
 </html>
